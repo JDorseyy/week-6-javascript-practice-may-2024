@@ -32,8 +32,10 @@ function day2Part2() {
   // Try it!
   // TODO: Prompt the user for how much in in their bank account. Convert it to a number.
   // 1. Ask the user for data
+  bank = prompt("How much do you have in the bank?");
 
   // 2. convert it to a number
+  bankNumber = Number(bank);
   
 
   // 3. use a math expression with the > operator to say if the statements is true or false.
@@ -54,11 +56,15 @@ function day2Part3() {
   // TODO: Prompt the user for how much in in their wallet. Convert it to a number, and tell them true or false if they can buy a TV.
 
   // 1. Ask the user for data
+  wallet = prompt("How much do you have in your wallet?");
 
   // 2. convert it to a number
+  walletNumber = Number(wallet);
+   
 
 
   // 3. use a math expression with the > operator to say if the statements is true or false.
+  messageParagraph.innerHTML = `The cost of the tv is ${tvNumber}. You currently have ${walletNumber}. You can afford the tv: ${walletNumber > tvNumber}`
 
 
 }
@@ -74,11 +80,14 @@ function day2Part4() {
   // Try it!
   // TODO: Prompt the user for how much in in their bank account. Convert it to a number, and tell them true or false if they can buy a rocket.
   // 1. Ask the user for data
+  bank = prompt("How much do you have in the bank?");
 
   // 2. convert it to a number
+  bankNumber = Number(bank);
 
 
   // 3. use a math expression with the > operator to say if the statements is true or false.
+  messageParagraph.innerHTML = `The cost of the rocket is ${rocketNumber}. You only have ${bankNumber}. Can you afford the rocket: ${rocketNumber < bankNumber}`
 
 
 }
